@@ -1,0 +1,52 @@
+@import "../../App.scss";
+
+.why_choose_us {
+  background: $secondaryColor;
+  color: #fff;
+
+  img {
+    height: 100%;
+    // object-fit: cover;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .why_choose_use_item_wraper {
+    h2 {
+      padding: 0.5rem 0;
+    }
+    p {
+      padding: 0.5rem 0;
+    }
+    i {
+      border: 1px solid #fff;
+      border-radius: 50%;
+      padding: 1.5rem;
+      &:hover {
+        transition: all 200ms linear;
+        background: #fff;
+        color: $secondaryColor;
+        cursor: pointer;
+      }
+    }
+    font-family: $secondaryFont;
+    .why_choose_use_item_grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 1rem;
+      margin-top: 3rem;
+      .why_choose-use_item {
+        margin: 0.5rem 0;
+        padding: 0.5rem;
+        display: flex;
+        align-items: center;
+        i {
+          margin-right: 1rem;
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}

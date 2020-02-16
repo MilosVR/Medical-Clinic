@@ -1,0 +1,51 @@
+@import "../../App.scss";
+
+.subscribe {
+  background: url(/assets/subscribe.jpg);
+  padding: 5rem 0;
+  color: #fff;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .subscribe_description {
+  }
+  .subscribe_form {
+    form {
+      input {
+        border: none;
+        padding: 1rem;
+        width: 400px;
+      }
+      button {
+        padding: 1rem;
+        background: $primaryColor;
+        color: #fff;
+      }
+    }
+  }
+}
+@media only screen and(max-width:1020px) {
+  .subscribe_form {
+    form {
+      input {
+        border: none;
+        padding: 1rem;
+        width: 300px !important;
+      }
+    }
+  }
+}
+@media only screen and(max-width:910px) {
+  .subscribe {
+    text-align: center;
+    padding: 2rem 0 !important;
+    .container {
+      flex-direction: column;
+    }
+    .subscribe_form {
+      padding-top: 1.5rem;
+    }
+  }
+}

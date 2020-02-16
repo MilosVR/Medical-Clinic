@@ -1,0 +1,48 @@
+@import "../../App.scss";
+
+.work_numbers_wraper {
+  background: url(/assets/patient.jpg) no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 500px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  //   &::before {
+  //     content: "";
+  //     position: absolute;
+  //     top: 0;
+  //     left: 0;
+  //     width: 100%;
+  //     height: 100%;
+  //     background: rgba(0, 0, 0, 0.3);
+  //   }
+  .work_numbers {
+    display: flex;
+    justify-content: space-around;
+
+    .work_numbers_item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      span {
+        font-size: 2rem;
+        padding: 1rem 0;
+        font-weight: bold;
+        color: #fff;
+        font-family: "Roboto Condensed", sans-serif;
+      }
+      p {
+        color: #fff;
+      }
+      img {
+        width: 6rem;
+        height: 6rem;
+      }
+    }
+  }
+}

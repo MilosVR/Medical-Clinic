@@ -29,15 +29,7 @@
         width: 100%;
         padding-top: 1rem;
         padding-bottom: 4rem;
-        clip-path: polygon(
-          30% 0,
-          32% 30%,
-          100% 30%,
-          100% 60%,
-          0 100%,
-          0% 35%,
-          0 0
-        );
+        clip-path: polygon(50% 0%, 52% 20%, 100% 20%, 100% 50%, 0 100%, 0 0);
         bottom: 0;
         transform: translate(0, 50%);
         left: 0;

@@ -17,6 +17,24 @@
       color: #9c9c9c;
     }
   }
+  @media only screen and(max-width:1024px) {
+    .table_price_grid {
+      grid-template-columns: repeat(2, 1fr) !important;
+      .table_price_grid_item {
+        margin: 1rem;
+      }
+    }
+  }
+  @media only screen and(max-width:600px) {
+    .table_price_grid {
+      grid-template-columns: 1fr !important;
+    }
+    .table_price_headline {
+      p {
+        text-align: center;
+      }
+    }
+  }
   .table_price_grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);

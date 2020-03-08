@@ -32,7 +32,7 @@ const Department = props => {
         <button>More</button>
       </div>
       <div className="medical_info_box">
-        <i class="fas fa-phone-volume fa-4x"></i>
+        <i className="fas fa-phone-volume fa-4x"></i>
         <div className="medical_info_box-description">
           <h4>DIRECT CONTACT</h4>
           <p>9am - 5pm Helpdesk</p>

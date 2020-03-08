@@ -1,16 +1,16 @@
 @import "../../App.scss";
 
 .medical_info {
-  //   background: #fbfbfb;
-  transform: translate(0, -50%);
+  padding-bottom: 4rem;
+  position: relative;
+  display: block;
   .medical_info_boxes {
     display: flex;
     justify-content: center;
     align-items: center;
     filter: drop-shadow(1px 1px 6px rgba(0, 0, 0, 0.3));
     .medical_info_box {
-      height: 300px;
-      flex: 1;
+      padding: 1rem;
       text-align: center;
       display: flex;
       align-items: center;
@@ -149,6 +149,48 @@
     }
     &:nth-child(4) {
       background: rgb(100, 184, 255);
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .medical_info_box {
+    width: 90% !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    &:nth-child(even) {
+      flex-direction: row-reverse !important;
+    }
+  }
+  .medical_info_boxes {
+    flex-direction: column;
+    padding-top: 2rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .medical_info_box {
+    width: 90% !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    img {
+      width: 20%;
+    }
+    &:nth-child(even) {
+      flex-direction: column !important;
+    }
+  }
+  .medical_info_boxes {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .medical_info_description {
+    transform: translate(0, 30%) !important;
+    flex-direction: column !important;
+    .medical_info_description_contact_phone {
+      padding-bottom: 1.5rem;
+    }
+    .medical_info_description_contact_email {
+      padding-bottom: 1.5rem;
     }
   }
 }

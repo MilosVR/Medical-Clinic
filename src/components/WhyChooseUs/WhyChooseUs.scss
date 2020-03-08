@@ -43,10 +43,47 @@
         display: flex;
         align-items: center;
         i {
+          width: 5rem;
+          height: 5rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
           margin-right: 1rem;
           font-size: 1.5rem;
         }
       }
     }
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .why_choose_us {
+    padding: 2rem 1rem;
+    .why_choose_use_item_wraper {
+      h1 {
+        padding-left: 0.75rem;
+      }
+      p {
+        padding-left: 0.75rem;
+      }
+      .why_choose-use_item {
+        p {
+          padding-left: 0;
+        }
+      }
+    }
+    .container {
+      justify-content: center !important;
+    }
+    img {
+      display: none;
+    }
+  }
+}
+@media only screen and (max-width: 650px) {
+  .why_choose_use_item_grid {
+    grid-template-columns: 1fr !important;
+  }
+  .why_choose_us {
+    padding: 3rem 1rem;
   }
 }

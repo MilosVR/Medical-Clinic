@@ -4,6 +4,27 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   useEffect(() => {
+    const navbar_main_links = document.querySelector(".navbar_main_links");
+    const hamburger_menu = document.querySelector(".hamburger_menu");
+    const navbar_body = document.querySelector(".navbar_body");
+    const navbar_header = document.querySelector(".navbar_header");
+
+    const toggleNavbar = e => {
+      if (!navbar_main_links.classList.contains("toggleMenu")) {
+        navbar_main_links.classList.add("toggleMenu");
+        navbar_body.classList.add("toggleMenu");
+        navbar_header.classList.add("toggleMenu");
+        hamburger_menu.classList.add("toggleMenu");
+      } else {
+        navbar_main_links.classList.remove("toggleMenu");
+        navbar_body.classList.remove("toggleMenu");
+        navbar_header.classList.remove("toggleMenu");
+        hamburger_menu.classList.remove("toggleMenu");
+      }
+    };
+
+    hamburger_menu.addEventListener("click", toggleNavbar);
+
     const changeNavbarBG = e => {
       let scroll_position = window.scrollY;
       const navbar = document.querySelector(".navbar");
@@ -29,6 +50,7 @@ const Navbar = () => {
             <li>Book Appointment</li>
             <li>Contacts</li>
             <li>example@example.com</li>
+            <img alt="" src="/assets/logo.png" />
           </ul>
           <ul className="navbar_header_social_links">
             <li>
@@ -49,10 +71,15 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
-      <div className="container">
-        <div className="navbar_body">
+      <div className="navbar_body">
+        <div className="container">
           <div className="navbar_body_logo">
             <img alt="" src="/assets/logo.png" />
+          </div>
+          <div className="hamburger_menu">
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
           <div className="navbar_main_links">
             <ul>
@@ -63,10 +90,10 @@ const Navbar = () => {
                 <Link to="/department">Deprtments</Link>
               </li>
               <li>
-                <Link to="/timetable">Timetable</Link>
+                <Link to="/appointment">Appointment</Link>
               </li>
               <li>
-                <Link to="/features">Features</Link>
+                <Link to="/blog">Blog</Link>
               </li>
               <li>
                 <Link to="/contact">Contact</Link>

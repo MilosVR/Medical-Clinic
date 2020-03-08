@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import HomeMainSlider from "./Slider/HomeMainSlider";
 import MedicalInfo from "../Medical_info/MedicalInfo";
 import MedicalServices from "../Medical_services/MedicalServices";
@@ -13,18 +13,20 @@ import Footer from "../Footer/Footer";
 
 const Home = props => {
   return (
-    <div>
+    <div className="home">
       <HomeMainSlider />
-      <MedicalInfo />
-      <MedicalServices />
-      <WhyChooseUs />
-      <MedicalStuff />
-      <WorkNumbers />
-      <TablePrice />
-      <ClientSay />
-      <News />
-      <Subscribe />
-      <Footer />
+      <div className="home_inner">
+        <MedicalInfo />
+        <MedicalServices />
+        <WhyChooseUs />
+        <MedicalStuff />
+        <WorkNumbers />
+        <TablePrice />
+        <ClientSay />
+        <News />
+        <Subscribe />
+        <Footer />
+      </div>
     </div>
   );
 };

@@ -4,27 +4,18 @@
   background: url(/assets/patient.jpg) no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  min-height: 500px;
+  height: 500px;
   width: 100%;
-  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  //   &::before {
-  //     content: "";
-  //     position: absolute;
-  //     top: 0;
-  //     left: 0;
-  //     width: 100%;
-  //     height: 100%;
-  //     background: rgba(0, 0, 0, 0.3);
-  //   }
   .work_numbers {
-    display: flex;
-    justify-content: space-around;
-
+    display: grid;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
     .work_numbers_item {
+      margin: 0 2rem;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -43,6 +34,26 @@
         width: 6rem;
         height: 6rem;
       }
+    }
+  }
+}
+@media only screen and(max-width: 900px) {
+  .work_numbers {
+    grid-template-columns: repeat(2, 1fr) !important;
+    .work_numbers_item {
+      margin: 2rem 4rem !important;
+    }
+  }
+  .work_numbers_wraper {
+    height: auto;
+  }
+}
+@media only screen and(max-width: 650px) {
+  .work_numbers {
+    grid-template-columns: 1fr !important;
+    padding: 1.75rem 0;
+    .work_numbers_item {
+      margin: 1rem !important;
     }
   }
 }

@@ -20,8 +20,14 @@ const MedicalServices = props => {
           </div>
           <div className="our_services_slider_wraper">
             <div className="slider_header">
-              <p>Inovation</p>
-              <h3>Our Services</h3>
+              <div>
+                <p>Inovation</p>
+                <h3>Our Services</h3>
+              </div>
+              <div className="service_slider_navigation">
+                <i className="far fa-caret-square-left"></i>
+                <i className="far fa-caret-square-right"></i>
+              </div>
             </div>
             <div className="our-service-slider">
               <div className="our_services_slider_card">

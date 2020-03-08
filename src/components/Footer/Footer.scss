@@ -3,7 +3,10 @@
 .footer {
   background: $primaryColor;
   color: #fff;
-  padding-top: 2rem;
+  padding-top: 6rem;
+  clip-path: polygon(50% 0%, 100% 5%, 100% 100%, 50% 100%, 0 100%, 0 5%);
+  z-index: 50;
+  position: relative;
   .footer_wraper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

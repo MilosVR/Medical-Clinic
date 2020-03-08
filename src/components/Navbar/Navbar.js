@@ -41,6 +41,17 @@ const Navbar = () => {
       window.removeEventListener("scroll", changeNavbarBG);
     };
   });
+
+  const closeMenu = () => {
+    const navbar_main_links = document.querySelector(".navbar_main_links");
+    const hamburger_menu = document.querySelector(".hamburger_menu");
+    const navbar_body = document.querySelector(".navbar_body");
+    const navbar_header = document.querySelector(".navbar_header");
+    navbar_main_links.classList.remove("toggleMenu");
+    navbar_body.classList.remove("toggleMenu");
+    navbar_header.classList.remove("toggleMenu");
+    hamburger_menu.classList.remove("toggleMenu");
+  };
   return (
     <div className="navbar">
       <div className="navbar_header">
@@ -84,19 +95,29 @@ const Navbar = () => {
           <div className="navbar_main_links">
             <ul>
               <li>
-                <Link to="/">Home</Link>
+                <Link to="/" onClick={closeMenu}>
+                  Home
+                </Link>
               </li>
               <li>
-                <Link to="/department">Deprtments</Link>
+                <Link to="/department" onClick={closeMenu}>
+                  Deprtments
+                </Link>
               </li>
               <li>
-                <Link to="/appointment">Appointment</Link>
+                <Link to="/appointment" onClick={closeMenu}>
+                  Appointment
+                </Link>
               </li>
               <li>
-                <Link to="/blog">Blog</Link>
+                <Link to="/blog" onClick={closeMenu}>
+                  Blog
+                </Link>
               </li>
               <li>
-                <Link to="/contact">Contact</Link>
+                <Link to="/contact" onClick={closeMenu}>
+                  Contact
+                </Link>
               </li>
             </ul>
           </div>

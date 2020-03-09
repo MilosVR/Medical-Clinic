@@ -2,9 +2,11 @@
 
 .subscribe {
   background: url(/assets/subscribe.jpg);
-  padding: 5rem 0;
   color: #fff;
+  width: 100%;
   .container {
+    margin-bottom: -2rem;
+    height: 350px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -40,12 +42,40 @@
 @media only screen and(max-width:910px) {
   .subscribe {
     text-align: center;
-    padding: 2rem 0 !important;
+    margin-bottom: -2rem !important;
     .container {
+      justify-content: center !important;
       flex-direction: column;
     }
     .subscribe_form {
       padding-top: 1.5rem;
+    }
+  }
+}
+
+@media only screen and(max-width:600px) {
+  .subscribe {
+    text-align: center;
+    padding-bottom: 4rem !important;
+    margin-bottom: -4rem !important;
+  }
+}
+@media only screen and(max-width:500px) {
+  .subscribe {
+    text-align: center;
+    padding-bottom: 6rem !important;
+    margin-bottom: -6rem !important;
+  }
+}
+@media only screen and(max-width:400px) {
+  .subscribe_description {
+    h2 {
+      padding-bottom: 0.5rem;
+    }
+  }
+  .subscribe_form {
+    button {
+      margin-top: 0.5rem;
     }
   }
 }

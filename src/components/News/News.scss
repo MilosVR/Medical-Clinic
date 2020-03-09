@@ -112,4 +112,9 @@
   .news_grid {
     grid-template-columns: 1fr !important;
   }
+  .news_headline {
+    p {
+      width: auto !important;
+    }
+  }
 }

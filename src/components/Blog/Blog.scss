@@ -18,6 +18,12 @@
       background: rgba($color: $secondaryColor, $alpha: 0.5);
       width: 100%;
     }
+    .blog_headline_description {
+      font-family: "Righteous", cursive;
+      p {
+        color: #fff;
+      }
+    }
     .blog_headline_title {
       height: 60px;
       background: rgba(0, 0, 0, 0.3);
@@ -28,7 +34,7 @@
       line-height: 60px;
       left: 0;
       .blog_headline_inner {
-        font-family: "Roboto Condensed", sans-serif;
+        font-family: "Righteous", cursive;
       }
     }
   }

@@ -34,7 +34,9 @@
         transform: translate(0, 50%);
         left: 0;
         .departments_headline_inner {
-          font-family: "Roboto Condensed", sans-serif;
+          font-family: "Righteous", cursive;
+          padding-left: 0.5rem;
+          color: $primaryColor;
         }
       }
     }
@@ -182,9 +184,19 @@
     width: 2rem;
     height: 2rem;
   }
+  .cosmetic_department {
+    img {
+      height: 400px !important;
+    }
+  }
 }
 @media only screen and (max-width: 400px) {
   .departments_footer {
     margin-bottom: -6rem !important;
+  }
+  .cosmetic_department {
+    img {
+      height: 300px !important;
+    }
   }
 }

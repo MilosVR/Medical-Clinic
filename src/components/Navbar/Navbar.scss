@@ -85,15 +85,16 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          border-bottom: 2px solid transparent;
+          border-bottom: 3px solid transparent;
           padding: 0 0.5rem;
           &:hover {
             transition: all 200ms linear;
-            border-bottom: 2px solid blue;
+            border-bottom: 3px solid #fff;
           }
           a {
             width: 100%;
             height: 100%;
+            padding: 2.5rem 0;
             display: flex;
             align-items: center;
             color: #fff;

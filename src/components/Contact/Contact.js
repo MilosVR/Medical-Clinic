@@ -9,7 +9,16 @@ const Contact = () => {
     <div className="contact">
       <div className="navbar_mask"></div>
       <div className="contact_header_wraper">
-        <ContactMap />
+        <iframe
+          width="100%"
+          height="400"
+          src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;coord=44.871039,20.6356412&amp;q=Milke%20Markovic%2C%20Pancevo+(Heisenberg)&amp;ie=UTF8&amp;t=&amp;z=13&amp;iwloc=B&amp;output=embed"
+          frameBorder="0"
+          scrolling="no"
+          marginHeight="0"
+          marginWidth="0"
+        ></iframe>
+
         <div className="contact_header">
           <div className="contact_headline">
             <div className="container">
